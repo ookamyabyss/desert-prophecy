@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desert Prophecy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Orbitron:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <nav class="hero-nav">
+      <div class="logo">Desert Prophecy</div>
+      <a href="#contact" class="contact-link">CONTACT</a>
+    </nav>
+
+    <div class="hero-quote">
+      <p>We walk the golden path, leaving nothing unfinished.</p>
+    </div>
+  </header>
+
+  <!-- SELETOR XBOX / PLAYSTATION -->
+  <section class="platform-selector">
+    <button class="platform xbox active" data-platform="xbox">XBOX</button>
+    <button class="platform ps" data-platform="ps">PLAYSTATION</button>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <section class="platform-content">
+
+    <!-- XBOX -->
+    <div class="platform-group xbox-group active">
+
+      <div class="generation-selector">
+        <span class="gen active" data-gen="x360">Xbox 360</span>
+        <span class="gen" data-gen="xone">Xbox One</span>
+        <span class="gen" data-gen="xseries">Xbox Series</span>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search games (ex: LEGO)">
+      </div>
+
+      <div class="game-gallery"></div>
+    </div>
+
+    <!-- PLAYSTATION -->
+    <div class="platform-group ps-group">
+
+      <div class="generation-selector">
+        <span class="gen active" data-gen="ps3">PlayStation 3</span>
+        <span class="gen" data-gen="ps4">PlayStation 4</span>
+        <span class="gen" data-gen="ps5">PlayStation 5</span>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search games (ex: LEGO)">
+      </div>
+
+      <div class="game-gallery"></div>
+    </div>
+
+  </section>
+
+    <footer class="site-footer" id="contact">
+        <div class="footer-content">
+
+            <div class="footer-left">
+            <h3>Desert Prophecy</h3>
+            <p class="footer-poem">
+                We collect paths, not trophies.<br>
+                Every game finished is a story remembered.
+            </p>
+            </div>
+
+            <div class="footer-center">
+            <div class="profile">
+                <span class="label">Instagram</span>
+                  <a class="value" href="https://instagram.com/_muad.dib" target="_blank">
+                    @_muad.dib
+                  </a>
+            </div>
+
+            <div class="profile">
+                <span class="label">XBOX</span>
+                <span class="value">OokamyAbyss</span>
+            </div>
+
+            <div class="profile">
+                <span class="label">PSN</span>
+                <span class="value">Son.Fish</span>
+            </div>
+            </div>
+
+            <div class="footer-right">
+            <div class="stats">
+                <div><strong id="count-xbox">0</strong> Xbox Games</div>
+                <div><strong id="count-ps">0</strong> PlayStation Games</div>
+            </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+  <!-- JS SEMPRE NO FINAL -->
+  <script src="js/main.js"></script>
+</body>
+</html>
