@@ -448,7 +448,7 @@ footer {
   content: "";
   position: absolute;
   inset: 12px;
-  border-radius: 4px;
+  border-radius: 0px;
   pointer-events: none;
   opacity: 0;
   z-index: 2;
