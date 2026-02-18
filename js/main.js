@@ -29,28 +29,42 @@ document.addEventListener("DOMContentLoaded", () => {
   /* =========================
      BANCO DE DADOS
   ========================= */
+
+
   const games = {
     xbox: {
       x360: [
+
+        /* Assassin's Creed */
         { name: "AC Revelations", cover: "assets/x360/23.jpg", score: "800 / 1490 G" },
         { name: "AC Black Flag", cover: "assets/x360/22.jpg", score: "880 / 1250 G" },
+        { name: "AC Liberation HD", cover: "assets/x360/39.png", score: "400 / 400 G", status: "perfect"},
+
+        /* Cars Disney */
         { name: "Cars 2", cover: "assets/x360/32.jpg", score: "1000 / 1000 G", status: "perfect" },
-        { name: "Cars 3", cover: "assets/x360/34.jpg", score: "820 / 1000 G" },
-        { name: "Dead Rising 2", cover: "assets/x360/43.png", score: "840 / 1000 G", status: "completed"  },
-        { name: "Dragon's Dogma: Dark Arisen", cover: "assets/x360/46.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Cars 3", cover: "assets/x360/34.jpg", score: "820 / 1000 G", status: "completed" },
+
+        /* Ben 10 */
         { name: "Ben 10 Ultimate Alien", cover: "assets/x360/28.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "Ben 10 Vilgax Attacks", cover: "assets/x360/27.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "Ben 10 Omiverse", cover: "assets/x360/26.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "Barbie Resgate de Cachorrinhos", cover: "assets/x360/25.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "DBZ Budokai HD", cover: "assets/x360/45.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "GRID 2", cover: "assets/x360/37.png", score: "1020 / 1250 G", status: "completed" },
+
+        /* Naruto */
         { name: "Naruto Storm Generations", cover: "assets/x360/62.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "The Peanuts Movie", cover: "assets/x360/75.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Naruto Storm 3 Full Burst", cover: "assets/x360/89.png", score: "1250 / 1250 G", status: "perfect" },
+        { name: "Naruto Storm Revolution", cover: "assets/x360/90.png", score: "1000 / 1000 G", status: "perfect" },
+
+        /* -- Fable -- */
         { name: "Fable Anniversary", cover: "assets/x360/47.png", score: "980 / 1000 G", status: "completed" },
-        { name: "Army of TWO: TDC", cover: "assets/x360/24.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Fable Heroes", cover: "assets/x360/49.png", score: "370 / 400 G" },
+
+        /* -- Bordelands -- */
         { name: "Bordelands Pre Sequel", cover: "assets/x360/29.png", score: "1355 / 1370 G", status: "completed" },
         { name: "Bordelands 2", cover: "assets/x360/31.png", score: "1625 / 1625 G", status: "perfect" },
         { name: "Bordelands", cover: "assets/x360/30.png", score: "1280 / 1750 G", status: "completed" },
+        { name: "TTG Bordelands", cover: "assets/x360/80.png", score: "1000 / 1000 G", status: "perfect" },
+
+        /* -- Lego -- */
         { name: "LEGO Batman ", cover: "assets/x360/3.png", score: "1000 / 1000 G", status: "perfect"},
         { name: "LEGO Batman 2", cover: "assets/x360/4.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "LEGO Batman 3", cover: "assets/x360/5.png", score: "1300 / 1300 G", status: "perfect" },
@@ -68,62 +82,90 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "LEGO Star Wars TFA", cover: "assets/x360/17.jpg", score: "1150 / 1150 G", status: "perfect" },
         { name: "LEGO O Hobbit", cover: "assets/x360/12.jpg", score: "1000 / 1000 G", status: "perfect" },
         { name: "LEGO O Senhor dos Anéis", cover: "assets/x360/13.jpg", score: "1000 / 1000 G", status: "perfect" },
-        { name: "COD Modern Warfare 2", cover: "assets/x360/40.png", score: "880 / 1000 G", status: "completed" },
-        { name: "WATCH DOGS", cover: "assets/x360/83.png", score: "880 / 1250 G" },
+
+        /* -- Tv's FOX, FX -- */
+        { name: "The Simpsons Game", cover: "assets/x360/91.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Family Guy: BTTM", cover: "assets/x360/50.png", score: "1000 / 1000 G", status: "perfect"},
+
+        /* -- Tomb Rider Lara Croft -- */
         { name: "RISE of Tomb Rider", cover: "assets/x360/67.png", score: "1670 / 1750 G" },
         { name: "Tomb Rider", cover: "assets/x360/77.png", score: "705 / 1000 G", status: "completed" },
+
+        /* -- Saints Rows -- */
+        { name: "Saints Rows IV", cover: "assets/x360/68.png", score: "1160 / 1200 G" },
+        { name: "Saints Rows: The Third", cover: "assets/x360/70.png", score: "1260 / 1300 G"},
+        { name: "Saints Rows: Gat out of Hell", cover: "assets/x360/69.png", score: "690 / 1000 G"},
+
+        /* -- Forza -- */
+        { name: "FH2: Fast & Furious", cover: "assets/x360/53.png", score: "1000 / 1000 G", status: "perfect"},
+        { name: "Forza Horizon", cover: "assets/x360/35.png", score: "1015 / 1500 G", status: "completed"},
+        { name: "Forza Horizon 2", cover: "assets/x360/36.png", score: "750 / 1000 G", status: "completed"},
+
+        /* -- Pac Man -- */
+        { name: "PAC MAN Aventura Fastasmagorica", cover: "assets/x360/63.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "PAC MAN CE DX", cover: "assets/x360/65.png", score: "200 / 200 G" , status: "perfect"},
+        { name: "PAC MAN C.E.", cover: "assets/x360/64.png", score: "200 / 200 G" , status: "perfect"},
+
+        /* -- Minecraft -- */
+        { name: "Minecraft: Story Mode", cover: "assets/x360/58.png", score: "1375 / 1370 G", status: "perfect" },
+        { name: "Minecraft: Story Mode 2", cover: "assets/x360/59.png", score: "1000 / 1000 G", status: "perfect" },
+
+        /* -- Soul Calibur -- */
+        { name: "Soul Calibur", cover: "assets/x360/72.png", score: "200 / 200 G", status: "perfect"},
+        { name: "Soul Calibur 2 HD Online", cover: "assets/x360/94.png", score: "110 / 400 G", status: "completed"},
+
+        /* -- Far Cry 4 -- */
+        { name: "Far Cry 4", cover: "assets/x360/52.png", score: "1170 / 1250 G", status: "completed"},
+        { name: "Far Cry 3 Blood Dragon", cover: "assets/x360/51.png", score: "400 / 400 G", status: "perfect" },
+
+        /* -- Virtua Fighter -- */
+        { name: "Virtua Fighter 5 FS", cover: "assets/x360/88.png", score: "400 / 400 G", status: "perfect" },
+        { name: "Virtua Fighter 2", cover: "assets/x360/81.png", score: "400 / 400 G" , status: "perfect"},
+
+        /* -- Perfect -- */
+        { name: "The Peanuts Movie", cover: "assets/x360/75.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Dragon's Dogma: Dark Arisen", cover: "assets/x360/46.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Barbie Resgate de Cachorrinhos", cover: "assets/x360/25.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "DBZ Budokai HD", cover: "assets/x360/45.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "JUJU", cover: "assets/x360/21.png", score: "1000 / 1000 G", status: "perfect"  },
         { name: "Dark Souls", cover: "assets/x360/42.png", score: "1000 / 1000 G", status: "perfect"  },
         { name: "Just Cause 2", cover: "assets/x360/18.jpg", score: "1000 / 1000 G", status: "perfect"  },
         { name: "Toy Story 3", cover: "assets/x360/79.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "Bully", cover: "assets/x360/33.jpg", score: "1000 / 1000 G", status: "perfect" },
-        { name: "Mafia 2", cover: "assets/x360/56.png", score: "1490 / 1500 G" },
-        { name: "Saints Rows IV", cover: "assets/x360/68.png", score: "1160 / 1200 G" },
-        { name: "Saints Rows: The Third", cover: "assets/x360/70.png", score: "1260 / 1300 G"},
-        { name: "Saints Rows: Gat out of Hell", cover: "assets/x360/69.png", score: "690 / 1000 G"},
-        { name: "FH2: Fast & Furious", cover: "assets/x360/53.png", score: "1000 / 1000 G", status: "perfect"},
-        { name: "Forza Horizon", cover: "assets/x360/35.png", score: "1015 / 1500 G", status: "completed"},
-        { name: "Forza Horizon 2", cover: "assets/x360/36.png", score: "750 / 1000 G", status: "completed"},
+        { name: "Super Hero Squad: TIG", cover: "assets/x360/73.png", score: "1500 / 1500 G", status: "perfect"},
+        { name: "MINI NINJAS", cover: "assets/x360/60.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Walking Dead: Michonne", cover: "assets/x360/82.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Army of TWO: TDC", cover: "assets/x360/24.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Joy Ride Turbo", cover: "assets/x360/19.png", score: "200 / 200 G", status: "perfect"},
+        { name: "Life Is Strange", cover: "assets/x360/85.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Batman: The Telltale Series", cover: "assets/x360/86.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "The Legend Of Korra", cover: "assets/x360/92.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Torchlight", cover: "assets/x360/78.png", score: "200 / 200 G", status: "perfect" },
+        { name: "The Wolf Among Us", cover: "assets/x360/76.png", score: "500 / 500 G", status: "perfect" },
+
+        /* -- Completed -- */
+        { name: "Dead Rising 2", cover: "assets/x360/43.png", score: "840 / 1000 G", status: "completed"  },
+        { name: "GRID 2", cover: "assets/x360/37.png", score: "1020 / 1250 G", status: "completed" },
+        { name: "COD Modern Warfare 2", cover: "assets/x360/40.png", score: "880 / 1000 G", status: "completed" },
         { name: "PVZ Garden Warfare", cover: "assets/x360/66.png", score: "795 / 1500 G", status: "completed"},
+        { name: "Medal of Honor", cover: "assets/x360/55.png", score: "500 / 1000 G", status: "completed" },
+        { name: "007: Blood Stone", cover: "assets/x360/20.png", score: "825 / 1000 G", status: "completed"  },
+        { name: "Driver São Francisco", cover: "assets/x360/84.png", score: "700 / 1000 G", status: "completed" },
+        { name: "Harm's Way", cover: "assets/x360/54.png", score: "190 / 200 G", status: "completed"},
+        { name: "Motocross Madness", cover: "assets/x360/61.png", score: "455 / 500 G", status: "completed"},
+        { name: "Tony Hawk's Pro Skate HD", cover: "assets/x360/93.png", score: "80 / 400 G", status: "completed"},
+        { name: "Child of Light", cover: "assets/x360/38.png", score: "390 / 400 G", status: "completed"},
+
+        { name: "WATCH DOGS", cover: "assets/x360/83.png", score: "880 / 1250 G" },
+        { name: "Mafia 2", cover: "assets/x360/56.png", score: "1490 / 1500 G" },
         { name: "Injustice", cover: "assets/x360/57.png", score: "580 / 1000 G" },
         { name: "Sleeping Dogs", cover: "assets/x360/71.png", score: "1000 / 1225 G" },
         { name: "Sonic Transformed", cover: "assets/x360/87.png", score: "485 / 1000 G" },
         { name: "Crackdown 2", cover: "assets/x360/41.png", score: "520 / 1500 G" },
         { name: "TEKKEN TAG 2", cover: "assets/x360/74.png", score: "750 / 1000 G" },
         { name: "DIRT 3", cover: "assets/x360/44.png", score: "815 / 1250 G" },
-        { name: "Family Guy: BTTM", cover: "assets/x360/50.png", score: "1000 / 1000 G", status: "perfect"},
-        { name: "Super Hero Squad: TIG", cover: "assets/x360/73.png", score: "1500 / 1500 G", status: "perfect"},
-        { name: "PAC MAN Aventura Fastasmagorica", cover: "assets/x360/63.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "Medal of Honor", cover: "assets/x360/55.png", score: "500 / 1000 G", status: "completed" },
-        { name: "Far Cry 4", cover: "assets/x360/52.png", score: "1170 / 1250 G", status: "completed"},
-        { name: "007: Blood Stone", cover: "assets/x360/20.png", score: "825 / 1000 G", status: "completed"  },
-        { name: "Minecraft: Story Mode", cover: "assets/x360/58.png", score: "1375 / 1370 G", status: "perfect" },
-        { name: "Minecraft: Story Mode 2", cover: "assets/x360/59.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "MINI NINJAS", cover: "assets/x360/60.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "TTG Bordelands", cover: "assets/x360/80.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "Walking Dead: Michonne", cover: "assets/x360/82.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "Driver São Francisco", cover: "assets/x360/84.png", score: "700 / 1000 G", status: "completed" },
-        { name: "Life Is Strange", cover: "assets/x360/85.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "Batman: The Telltale Series", cover: "assets/x360/86.png", score: "1000 / 1000 G", status: "perfect" },
-
-        
-
-        { name: "Torchlight", cover: "assets/x360/78.png", score: "200 / 200 G", status: "perfect" },
-        { name: "The Wolf Among Us", cover: "assets/x360/76.png", score: "500 / 500 G", status: "perfect" },
         { name: "Costume Quest", cover: "assets/x360/48.png", score: "200 / 250 G" },
-        { name: "Far Cry 3 Blood Dragon", cover: "assets/x360/51.png", score: "400 / 400 G", status: "perfect" },
-        { name: "Virtua Fighter 5 FS", cover: "assets/x360/88.png", score: "400 / 400 G", status: "perfect" },
-        { name: "Virtua Fighter 2", cover: "assets/x360/81.png", score: "400 / 400 G" , status: "perfect"},
-        { name: "Fable Heroes", cover: "assets/x360/49.png", score: "370 / 400 G" },
-        { name: "Harm's Way", cover: "assets/x360/54.png", score: "190 / 200 G", status: "completed"},
-        { name: "Joy Ride Turbo", cover: "assets/x360/19.png", score: "200 / 200 G", status: "perfect"},
-        { name: "PAC MAN CE DX", cover: "assets/x360/65.png", score: "200 / 200 G" , status: "perfect"},
-        { name: "PAC MAN C.E.", cover: "assets/x360/64.png", score: "200 / 200 G" , status: "perfect"},
-        { name: "Motocross Madness", cover: "assets/x360/61.png", score: "455 / 500 G", status: "completed"},
-        { name: "Soul Calibur", cover: "assets/x360/72.png", score: "200 / 200 G", status: "perfect"},
-        { name: "AC Liberation HD", cover: "assets/x360/39.png", score: "400 / 400 G", status: "perfect"},
-        { name: "Child of Light", cover: "assets/x360/38.png", score: "390 / 400 G", status: "completed"},
-        
+
       ],
       xone: [
         { name: "LEGO Avengers", cover: "assets/xone/lego-avengers.jpg" }
