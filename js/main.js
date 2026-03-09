@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "AC Liberation HD", cover: "assets/x360/39.png", score: "400 / 400 G", status: "perfect"},
 
         /* Cars Disney */
+        { name: "Cars ", cover: "assets/x360/0.jpg", score: "1000 / 1000 G", status: "perfect" },
         { name: "Cars 2", cover: "assets/x360/32.jpg", score: "1000 / 1000 G", status: "perfect" },
         { name: "Cars 3", cover: "assets/x360/34.jpg", score: "820 / 1000 G", status: "completed" },
 
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Naruto Storm Generations", cover: "assets/x360/62.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "Naruto Storm 3 Full Burst", cover: "assets/x360/89.png", score: "1250 / 1250 G", status: "perfect" },
         { name: "Naruto Storm Revolution", cover: "assets/x360/90.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Naruto Storm 2", cover: "assets/x360/0.png", score: "620 / 1000 G", status: "completed" },
 
         /* -- Fable -- */
         { name: "Fable Anniversary", cover: "assets/x360/47.png", score: "980 / 1000 G", status: "completed" },
@@ -122,7 +124,19 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Virtua Fighter 5 FS", cover: "assets/x360/88.png", score: "400 / 400 G", status: "perfect" },
         { name: "Virtua Fighter 2", cover: "assets/x360/81.png", score: "400 / 400 G" , status: "perfect"},
 
+        /* -- Avatar -- */
+        { name: "The Legend Of Korra", cover: "assets/x360/92.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "The Legend Of Aang", cover: "assets/x360/0.png", score: "1000 / 1000 G", status: "perfect" },
+
+        /* -- Need For Speed -- */
+        { name: "Need For Speed Carbon", cover: "assets/x360/0.png", score: "125 / 1000 G", status: "perfect" },
+        { name: "Need For Speed Most Wanted", cover: "assets/x360/0.png", score: "1000 / 1000 G", status: "perfect" },
+
         /* -- Perfect -- */
+        { name: "Prince of Persia: The Forgotten Sands", cover: "assets/x360/0.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Spec Ops The Line", cover: "assets/x360/0.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Captain America: Super Soldier", cover: "assets/x360/0.png", score: "1000 / 1000 G", status: "perfect" },
+        { name: "Harry Potter and the Half-Blood Prince", cover: "assets/x360/0.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "The Peanuts Movie", cover: "assets/x360/75.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "Dragon's Dogma: Dark Arisen", cover: "assets/x360/46.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "Barbie Resgate de Cachorrinhos", cover: "assets/x360/25.png", score: "1000 / 1000 G", status: "perfect" },
@@ -139,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Joy Ride Turbo", cover: "assets/x360/19.png", score: "200 / 200 G", status: "perfect"},
         { name: "Life Is Strange", cover: "assets/x360/85.png", score: "1000 / 1000 G", status: "perfect" },
         { name: "Batman: The Telltale Series", cover: "assets/x360/86.png", score: "1000 / 1000 G", status: "perfect" },
-        { name: "The Legend Of Korra", cover: "assets/x360/92.png", score: "1000 / 1000 G", status: "perfect" },
+
         { name: "Torchlight", cover: "assets/x360/78.png", score: "200 / 200 G", status: "perfect" },
         { name: "The Wolf Among Us", cover: "assets/x360/76.png", score: "500 / 500 G", status: "perfect" },
 
